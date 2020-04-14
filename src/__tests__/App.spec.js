@@ -18,13 +18,13 @@ const actWait = async (amount = 0) => {
   });
 };
 
-const repositoryId = 'd6e43105-a559-45b7-8fd7-53416b415741';
+const repositoryId = 'ec9ce899-b362-499d-a15e-4b9b021ce6ba';
 
 apiMock.onGet("repositories").reply(200, [
   {
     id: repositoryId,
     title: "Desafio React Native",
-    url: "https://github.com/josepholiveira",
+    url: "https://github.com/marciodiasdeveloper",
     techs: ["React Native", "Node.js"],
     likes: 0,
   },
@@ -54,7 +54,7 @@ describe("Likes", () => {
       .reply(200, {
         id: repositoryId,
         title: "Desafio React Native",
-        url: "https://github.com/josepholiveira",
+        url: "https://github.com/marciodiasdeveloper",
         techs: ["React Native", "Node.js"],
         likes: 1,
       });
@@ -72,7 +72,7 @@ describe("Likes", () => {
       .reply(200, {
         id: repositoryId,
         title: "Desafio React Native",
-        url: "https://github.com/josepholiveira",
+        url: "https://github.com/marciodiasdeveloper",
         techs: ["React Native", "Node.js"],
         likes: 2,
       });
